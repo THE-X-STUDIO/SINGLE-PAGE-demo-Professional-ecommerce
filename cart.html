@@ -2,22 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exery — Cart</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>DEMO — Your Shopping Cart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <div class="logo">EXERY</div>
+      <div class="logo">DEMO</div>
       <nav class="nav">
-        <a href="index.html">Contacts</a>
+        <a href="index.html">Home</a>
         <a href="cart.html">Cart</a>
       </nav>
       <div class="tools">
-        <div class="search">
+        <button class="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="search mobile-hide">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search...">
         </div>
@@ -30,73 +34,90 @@
     </header>
 
     <main class="main">
-      <section class="card cart">
+      <section class="card cart-page">
         <div class="cart-head">
-          <h1 class="title">Your Cart</h1>
-          <p class="subtitle">Review items and proceed to secure checkout.</p>
+          <h1 class="title">SHOPPING BAG</h1>
+          <p class="subtitle luxury-tag">A curated selection of your finest choices.</p>
         </div>
+        
         <div class="cart-grid">
           <div class="cart-items">
-            <div class="cart-item" data-reveal>
-              <img src="https://images.unsplash.com/photo-1511551189185-0e72a1e27c62?q=80&w=800&auto=format&fit=crop" alt="Backpack">
-              <div class="ci-info">
-                <div class="ci-name">V-Class Leather Backpack</div>
-                <div class="ci-meta">Color: Black • Size: 18L</div>
-                <div class="ci-qty">
-                  <button class="qty-btn">-</button>
-                  <span>1</span>
-                  <button class="qty-btn">+</button>
+            <!-- Luxury Item 1 -->
+            <div class="cart-item-full" data-reveal>
+              <div class="ci-img-wrap">
+                <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\67a876c581f26e84d5877af11669e1e9-389d0fb4.jpg" alt="Monogram Clutch">
+              </div>
+              <div class="ci-details">
+                <div class="ci-main-info">
+                  <h3 class="ci-name">Monogram Chain Clutch</h3>
+                  <p class="ci-variant">Tone: Cognac Brown</p>
+                </div>
+                <div class="ci-actions">
+                  <div class="ci-qty-wrapper">
+                    <button class="qty-btn">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn">+</button>
+                  </div>
+                  <div class="ci-price-wrap">
+                    <span class="ci-unit-price">$450.00</span>
+                  </div>
+                  <button class="ci-remove-btn"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
               </div>
-              <div class="ci-price">$189</div>
-              <button class="ci-remove"><i class="fa-solid fa-xmark"></i></button>
             </div>
-            <div class="cart-item" data-reveal>
-              <img src="https://images.unsplash.com/photo-1516478177764-9fe5bd6b98d3?q=80&w=800&auto=format&fit=crop" alt="Backpack">
-              <div class="ci-info">
-                <div class="ci-name">Urban Commuter Pack</div>
-                <div class="ci-meta">Color: Brown • Size: 22L</div>
-                <div class="ci-qty">
-                  <button class="qty-btn">-</button>
-                  <span>2</span>
-                  <button class="qty-btn">+</button>
+
+            <!-- Luxury Item 2 (Optional/Placeholder) -->
+            <div class="cart-item-full" data-reveal>
+              <div class="ci-img-wrap">
+                <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\1ea2b9eb8a718208101bf07f005ef2ac-109c2424.jpg" alt="Monogram Clutch Black">
+              </div>
+              <div class="ci-details">
+                <div class="ci-main-info">
+                  <h3 class="ci-name">Monogram Chain Clutch</h3>
+                  <p class="ci-variant">Tone: Onyx Black</p>
+                </div>
+                <div class="ci-actions">
+                  <div class="ci-qty-wrapper">
+                    <button class="qty-btn">-</button>
+                    <span class="qty-val">1</span>
+                    <button class="qty-btn">+</button>
+                  </div>
+                  <div class="ci-price-wrap">
+                    <span class="ci-unit-price">$450.00</span>
+                  </div>
+                  <button class="ci-remove-btn"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
               </div>
-              <div class="ci-price">$129</div>
-              <button class="ci-remove"><i class="fa-solid fa-xmark"></i></button>
             </div>
           </div>
-          <aside class="cart-summary" data-reveal>
-            <h3>Summary</h3>
-            <div class="sum-row"><span>Subtotal</span><span>$447</span></div>
-            <div class="sum-row"><span>Shipping</span><span>$0</span></div>
-            <div class="sum-row"><span>Taxes</span><span>$36</span></div>
-            <div class="sum-total"><span>Total</span><span>$483</span></div>
-            <button class="btn checkout">Checkout</button>
-            <div class="secure">
-              <i class="fa-solid fa-shield-heart"></i>
-              <span>Secure and encrypted</span>
+
+          <aside class="cart-summary-page" data-reveal>
+            <div class="summary-card">
+              <h3>ORDER SUMMARY</h3>
+              <div class="sum-row">
+                <span>Subtotal</span>
+                <span>$900.00</span>
+              </div>
+              <div class="sum-row">
+                <span>Shipping</span>
+                <span>Complimentary</span>
+              </div>
+              <div class="sum-row">
+                <span>Estimated Tax</span>
+                <span>$72.00</span>
+              </div>
+              <div class="sum-total">
+                <span>Total</span>
+                <span>$972.00</span>
+              </div>
+              <button class="btn checkout-btn">Secure Checkout</button>
+              <div class="payment-icons">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+              </div>
             </div>
           </aside>
-        </div>
-      </section>
-
-      <section class="features card" data-reveal>
-        <div class="feature">
-          <div class="icon"><i class="fa-solid fa-truck"></i></div>
-          <div class="text">Free Shipping & Returns</div>
-        </div>
-        <div class="feature">
-          <div class="icon"><i class="fa-solid fa-rotate-left"></i></div>
-          <div class="text">100% Money Back Guarantee</div>
-        </div>
-        <div class="feature">
-          <div class="icon"><i class="fa-solid fa-gem"></i></div>
-          <div class="text">High quality material</div>
-        </div>
-        <div class="feature">
-          <div class="icon"><i class="fa-solid fa-shield-heart"></i></div>
-          <div class="text">Safe and Secure Checkout</div>
         </div>
       </section>
     </main>
@@ -104,8 +125,8 @@
     <footer class="footer card">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo">EXERY</div>
-          <p class="footer-text">Premium leather backpacks crafted for style and durability.</p>
+          <div class="logo">DEMO</div>
+          <p class="footer-text">Exquisite leather goods crafted for the discerning individual.</p>
           <div class="socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -113,26 +134,19 @@
           </div>
         </div>
         <div class="footer-links">
-          <h4>Support</h4>
-          <a href="#">Shipping</a>
-          <a href="#">Returns</a>
-          <a href="#">FAQs</a>
+          <h4>Collection</h4>
+          <a href="index.html#product">Clutches</a>
+          <a href="#">Bags</a>
+          <a href="#">Accessories</a>
         </div>
         <div class="footer-links">
-          <h4>Company</h4>
-          <a href="#">About</a>
-          <a href="#">Careers</a>
+          <h4>Concierge</h4>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
           <a href="#">Contact</a>
         </div>
-        <div class="footer-news">
-          <h4>Newsletter</h4>
-          <div class="newsletter">
-            <input type="email" placeholder="Your email">
-            <button class="btn small">Subscribe</button>
-          </div>
-        </div>
       </div>
-      <div class="copyright">© 2026 Exery. All rights reserved.</div>
+      <div class="copyright">© 2026 DEMO. All rights reserved.</div>
     </footer>
   </div>
 
@@ -141,17 +155,31 @@
   </button>
 
   <script>
-    const topBtn = document.querySelector('.scroll-top');
-    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    // Theme toggle
     const toggle = document.querySelector('.theme-toggle');
     toggle.addEventListener('click', () => document.documentElement.classList.toggle('light'));
+    
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        menuToggle.querySelector('i').classList.toggle('fa-bars');
+        menuToggle.querySelector('i').classList.toggle('fa-xmark');
+      });
+    }
+    
+    // Reveal observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add('in');
       });
     }, { threshold: 0.2 });
     document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+    
+    const topBtn = document.querySelector('.scroll-top');
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   </script>
 </body>
 </html>
-

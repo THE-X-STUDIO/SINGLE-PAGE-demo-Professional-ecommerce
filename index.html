@@ -2,22 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exery — Elegant Leather Men's Backpacks</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>DEMO — Signature Luxury Handbags</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;1,400&family=Tenor+Sans&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/coolvetica-2" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="page">
     <header class="header">
-      <div class="logo">EXERY</div>
+      <div class="logo">DEMO</div>
       <nav class="nav">
+        <a href="index.html">Home</a>
         <a href="#">Contacts</a>
         <a href="cart.html">Cart</a>
       </nav>
       <div class="tools">
-        <div class="search">
+        <button class="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="search mobile-hide">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" placeholder="Search...">
         </div>
@@ -29,15 +34,45 @@
       </div>
     </header>
 
+    <div class="cart-overlay"></div>
+    <aside class="cart-drawer">
+      <div class="cart-drawer-head">
+        <h3>Shopping Cart</h3>
+        <button class="cart-close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-drawer-items">
+        <!-- Sample Item -->
+        <div class="cart-drawer-item">
+          <img src="https://images.unsplash.com/photo-1511551189185-0e72a1e27c62?q=80&w=200&auto=format&fit=crop" alt="Backpack">
+          <div class="cdi-info">
+            <div class="cdi-name">V-Class Leather Backpack</div>
+            <div class="cdi-price">$189.00</div>
+            <div class="cdi-qty">
+              <button class="qty-btn">-</button>
+              <span>1</span>
+              <button class="qty-btn">+</button>
+            </div>
+          </div>
+          <button class="cdi-remove"><i class="fa-solid fa-trash-can"></i></button>
+        </div>
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="sum-row"><span>Subtotal</span><span>$189.00</span></div>
+        <div class="sum-row"><span>Shipping</span><span>FREE</span></div>
+        <div class="sum-total"><span>Total</span><span>$189.00</span></div>
+        <button class="btn checkout">Proceed to Checkout</button>
+      </div>
+    </aside>
+
     <main class="main">
       <section class="hero card" data-reveal>
         <div class="hero-left" data-reveal>
-          <div class="overline">Tom Fletcher</div>
+          <div class="overline">Luxury Collection</div>
           <h1 class="title">
-            ELEGANT LEATHER<br> MEN'S BACKPACKS
+            SIGNATURE<br> MONOGRAM CLUTCH
           </h1>
           <p class="subtitle">
-            Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
+            Defined by elegance and crafted for the modern woman. Our signature monogram collection represents the pinnacle of artisanal leather craftsmanship.
           </p>
           <div class="cta-row">
             <a class="btn" href="#">Explore More</a>
@@ -49,10 +84,7 @@
         </div>
         <div class="hero-right" data-reveal>
           <div class="image-wrap">
-            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1600&auto=format&fit=crop" alt="Leather backpack">
-            <div class="radial">
-              <div class="radial-text">EXPLORE • MORE • EXERY • 03/43</div>
-            </div>
+            <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\3ao8k9i0-47976ed0.png" alt="Signature Luxury Handbag">
             <div class="v-slider">
               <button class="vs-btn up" aria-label="Up"><i class="fa-solid fa-arrow-up"></i></button>
               <div class="dots">
@@ -62,6 +94,105 @@
               </div>
               <button class="vs-btn down" aria-label="Down"><i class="fa-solid fa-arrow-down"></i></button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-detail card" id="product" data-reveal>
+        <div class="product-grid">
+          <div class="product-gallery">
+            <div class="main-img">
+              <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\67a876c581f26e84d5877af11669e1e9-389d0fb4.jpg" alt="Monogram Clutch - Cognac Brown">
+            </div>
+            <div class="thumbs">
+              <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\67a876c581f26e84d5877af11669e1e9-389d0fb4.jpg" class="active" data-variant="brown" alt="Cognac Brown">
+              <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\1ea2b9eb8a718208101bf07f005ef2ac-109c2424.jpg" data-variant="black" alt="Onyx Black">
+              <img src="C:\Users\HUNTER\AppData\Roaming\Qoder\SharedClientCache\cache\images\36af3e56\e233f84b21efc7d8021c110a6c5aadaf-95d493f6.jpg" data-variant="mustard" alt="Royal Mustard">
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="badge">Limited Edition</div>
+            <h2 class="product-title">Monogram Chain Clutch</h2>
+            <div class="product-price">
+              <span class="current">$450.00</span>
+              <span class="old">$620.00</span>
+            </div>
+            <p class="product-desc">
+              An icon of sophistication. This clutch features our embossed monogram pattern, a signature gold-tone hardware clasp, and a versatile crossbody chain strap. Perfect for transitioning from day to evening with effortless grace.
+            </p>
+            
+            <div class="options">
+              <div class="option">
+                <label>Available Tones</label>
+                <div class="color-swatches">
+                  <div class="swatch brown active" data-variant="brown" title="Cognac Brown"></div>
+                  <div class="swatch black" data-variant="black" title="Onyx Black"></div>
+                  <div class="swatch mustard" data-variant="mustard" title="Royal Mustard"></div>
+                </div>
+              </div>
+              <div class="option">
+                <label>Size</label>
+                <select class="size-select">
+                  <option>Standard (18L)</option>
+                  <option>Large (24L)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="action-btns">
+              <button class="btn add-to-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+                Add to Cart
+              </button>
+              <button class="tool"><i class="fa-regular fa-heart"></i></button>
+            </div>
+
+            <div class="product-meta">
+              <div class="meta-item">
+                <i class="fa-solid fa-check"></i>
+                <span>In Stock</span>
+              </div>
+              <div class="meta-item">
+                <i class="fa-solid fa-rotate-left"></i>
+                <span>30-Day Returns</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card testimonials-section" data-reveal>
+        <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
+        <div class="testimonials">
+          <div class="testimonial-card">
+            <p class="quote">"The craftsmanship is beyond compare. This clutch is a true statement piece that draws compliments everywhere I go."</p>
+            <p class="author">— Eleanor V.</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"Elegant, timeless, and surprisingly versatile. The sand beige tone is the perfect neutral for my wardrobe."</p>
+            <p class="author">— Sophia M.</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="quote">"Fast shipping and the packaging was exquisite. A truly premium experience from start to finish."</p>
+            <p class="author">— Isabella K.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card faq-container" data-reveal>
+        <h2 class="section-title">FREQUENTLY ASKED QUESTIONS</h2>
+        <div class="faq-section">
+          <div class="faq-item">
+            <div class="faq-q">What materials are used? <i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a">We use premium full-grain Italian leather and custom gold-tone hardware. Each piece is hand-finished by our artisans.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">How do I care for my clutch? <i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a">Store in the provided dust bag and clean with a soft, dry cloth. Avoid prolonged exposure to direct sunlight or moisture.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">Is the chain strap removable? <i class="fa-solid fa-plus"></i></div>
+            <div class="faq-a">Yes, the gold-tone chain strap is fully detachable, allowing you to use the piece as a handheld clutch.</div>
           </div>
         </div>
       </section>
@@ -106,7 +237,7 @@
     <footer class="footer card">
       <div class="footer-grid">
         <div class="footer-brand">
-          <div class="logo">EXERY</div>
+          <div class="logo">DEMO</div>
           <p class="footer-text">Premium leather backpacks crafted for style and durability.</p>
           <div class="socials">
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -130,11 +261,11 @@
           <h4>Newsletter</h4>
           <div class="newsletter">
             <input type="email" placeholder="Your email">
-            <button class="btn small">Subscribe</button>
+            <button class="btn small">chat</button>
           </div>
         </div>
       </div>
-      <div class="copyright">© 2026 Exery. All rights reserved.</div>
+      <div class="copyright">© 2026 THEXSTUDIO. All rights reserved.</div>
     </footer>
   </div>
 
@@ -143,16 +274,93 @@
   </button>
 
   <script>
+    // Scroll top
     const topBtn = document.querySelector('.scroll-top');
     topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    
+    // Theme toggle
     const toggle = document.querySelector('.theme-toggle');
     toggle.addEventListener('click', () => document.documentElement.classList.toggle('light'));
+    
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav');
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+      menuToggle.querySelector('i').classList.toggle('fa-bars');
+      menuToggle.querySelector('i').classList.toggle('fa-xmark');
+    });
+    
+    // Reveal observer
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) e.target.classList.add('in');
       });
     }, { threshold: 0.2 });
     document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    // Cart Drawer Toggle
+    const cartTriggers = document.querySelectorAll('.cart-trigger');
+    const cartDrawer = document.querySelector('.cart-drawer');
+    const cartOverlay = document.querySelector('.cart-overlay');
+    const cartClose = document.querySelector('.cart-close');
+
+    const toggleCart = () => {
+      // If we are on the home page, we can still use the drawer if we want, 
+      // but the user asked for a cart page, so we link to it.
+      // However, for better UX on home, maybe keep the drawer and use the page as a fallback or vice-versa.
+      // Let's stick to the separate page as requested.
+      window.location.href = 'cart.html';
+    };
+
+    cartTriggers.forEach(t => t.addEventListener('click', toggleCart));
+    cartClose.addEventListener('click', toggleCart);
+    cartOverlay.addEventListener('click', toggleCart);
+
+    // Gallery Thumbs
+    const thumbs = document.querySelectorAll('.thumbs img');
+    const mainImg = document.querySelector('.main-img img');
+    
+    const updateGallery = (thumb) => {
+      thumbs.forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+      mainImg.src = thumb.src;
+    };
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => updateGallery(thumb));
+    });
+
+    // Color selection sync with gallery
+    const swatches = document.querySelectorAll('.swatch');
+    swatches.forEach(swatch => {
+      swatch.addEventListener('click', () => {
+        swatches.forEach(s => s.classList.remove('active'));
+        swatch.classList.add('active');
+        
+        // Find matching thumbnail and update gallery
+        const variant = swatch.dataset.variant;
+        const matchingThumb = document.querySelector(`.thumbs img[data-variant="${variant}"]`);
+        if (matchingThumb) updateGallery(matchingThumb);
+      });
+    });
+
+    // Add to cart simple logic
+    const addBtn = document.querySelector('.add-to-cart');
+    addBtn.addEventListener('click', () => {
+      // For demo purposes, just open the cart
+      if (!cartDrawer.classList.contains('active')) toggleCart();
+    });
+    // FAQ Toggle
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        item.classList.toggle('active');
+        const icon = q.querySelector('i');
+        icon.classList.toggle('fa-plus');
+        icon.classList.toggle('fa-minus');
+      });
+    });
   </script>
 </body>
 </html>
